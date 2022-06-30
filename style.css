@@ -1,0 +1,148 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+body {
+  background-color: var(--Pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+  font-family: inherit;
+}
+
+h2 {
+  color: var(--Dark-blue);
+}
+
+.bg {
+  background: url(images/pattern-background-desktop.svg) no-repeat center/cover;
+}
+
+.container {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--Very-pale-blue);
+  border-radius: 12px;
+  width: 400px;
+}
+
+.image_container>img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.order_container {
+  padding: 10% 5%;
+  text-align: center;
+  line-height: 150%;
+}
+
+.order_container>p {
+  padding-top: 6%;
+  color: var(--Desaturated-blue);
+}
+
+.plan_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan_container>img {
+  width: 10%;
+}
+
+.text {
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+.text>h4 {
+  color: var(--Dark-blue)
+}
+
+.text>p {
+  color: var(--Desaturated-blue);
+}
+
+.btn {
+  color: var(--Bright-blue);
+  font-weight: bold;
+}
+
+a:hover {
+  color: #776bf1;
+  text-decoration: none;
+}
+
+.buttons {
+  padding: 10%;
+}
+
+.pay {
+  width: 100%;
+  padding: 5%;
+  color: var(--Very-pale-blue);
+  background-color: var(--Bright-blue);
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 10px 10px #ddd9f9;
+  -moz-box-shadow: 0px 10px 10px #ddd9f9;
+  box-shadow: 0px 16px 12px #ddd9f9;
+  text-decoration: none;
+}
+
+.pay:hover {
+  background: #766cf1;
+  text-decoration: none;
+  box-shadow: 0px 10px 15px #ddd9f9;
+}
+
+.cancle {
+  display: flex;
+  margin: 35px auto 0 auto;
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+  font-weight: 900;
+  border: 0;
+}
+
+.cancle:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
